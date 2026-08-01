@@ -25,7 +25,8 @@ No classifier, remaining-useful-life model, train/test split or fitted machine-l
 hydraulic_data_processing.py   Complete processing and analysis code
 requirements.txt               Python dependencies
 method_specification.json      Machine-readable method specification
-results/                       Generated tables, figures and processed data
+hydraulic-condition-monitoring-dissertation-v1.0.zip
+                               Complete code package, including results/
 ```
 
 ## Source dataset
