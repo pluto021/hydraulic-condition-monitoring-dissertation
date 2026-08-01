@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.py[cod]
+condition+monitoring+of+hydraulic+systems.zip
+ref/condition+monitoring+of+hydraulic+systems.zip
+outputs/

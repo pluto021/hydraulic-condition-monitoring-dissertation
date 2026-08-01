@@ -1,0 +1,25 @@
+{
+  "name": "Interpretable cycle-level hydraulic condition processing",
+  "version": "1.0",
+  "trained_machine_learning_model": false,
+  "source_dataset": "UCI Condition Monitoring of Hydraulic Systems",
+  "dataset_doi": "10.24432/C5CW21",
+  "cycle_count": 2205,
+  "cycle_duration_seconds": 60,
+  "alignment_key": "cycle row index",
+  "resampling_or_interpolation": false,
+  "physical_sensors": [
+    "PS1", "PS2", "PS3", "PS4", "PS5", "PS6",
+    "EPS1", "FS1", "FS2", "TS1", "TS2", "TS3", "TS4", "VS1"
+  ],
+  "cycle_features": {
+    "mean": "sum(x_t) / n",
+    "std": "sqrt(sum((x_t - mean)^2) / n); ddof=0",
+    "min": "minimum(x_t)",
+    "max": "maximum(x_t)",
+    "range": "maximum(x_t) - minimum(x_t)"
+  },
+  "physical_feature_count": 70,
+  "eta_squared": "sum_g(n_g * (mean_g - grand_mean)^2) / sum_i((x_i - grand_mean)^2)",
+  "interpretation": "Exploratory benchmark-level hydraulic evidence; not an aircraft-certified maintenance threshold or validated landing-gear model."
+}
